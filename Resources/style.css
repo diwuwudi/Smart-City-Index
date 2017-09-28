@@ -7,6 +7,8 @@ body {
 
 /* Style the tab */
 div.tab{
+    display: flex;
+    justify-content: center;
     width: 100%;
     overflow: hidden;
     border: none;
@@ -14,7 +16,7 @@ div.tab{
 }
 
 /* Style the buttons inside the tab */
-div.tab button {
+div.first button {
     background-color: inherit;
     float: left;
     border: none;
@@ -22,7 +24,18 @@ div.tab button {
     cursor: pointer;
     padding: 5px 11px;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 18px;
+}
+
+div.second button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: inherit;
+    cursor: pointer;
+    padding: 5px 11px;
+    transition: 0.3s;
+    font-size: 12px;
 }
 
 /* Change background color of buttons on hover */
