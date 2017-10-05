@@ -1,97 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="./Resources/style.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+  background-image: url("./Resources/plain-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropbtn{
+    background-color: #170ace;
+    min-width: 150px;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #170ace;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    color: white;
+    background-color: #170ace;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 150px;
+}
+
+.dropdown-content button:hover {
+  background-color: #aca7ef
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #170ace;
+}
+
+div button.active {
+    background-color: #786ff2;
+}
+
+p {
+	text-align: center;
+  margin-bottom: 22px;
+}
+</style>
 </head>
 <body>
 
-<p>Note: this is only a demo page.</p>
-
-<div class="tab first">
-  <button class="tablinks" onclick="openDash(event, 'Map')" id="defaultOpen">
-    LGA Map (Front Page)
-  </button>
-  <button class="tablinks" onclick="openDash(event, 'Compare')">
-    Compare Two Local Government Councils</button>
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <button class="tablinks" onclick="openDash(event, 'Main Page')"
+  id="defaultOpen">Main Page</button>
+    <button class="tablinks" onclick="openDash(event, 'Compare Two Councils')">
+      Compare Two Councils</button>
+    <button class="tablinks" onclick="openDash(event, 'Connectivity')">
+      1. Connectivity</button>
+    <button class="tablinks" onclick="openDash(event, 'Ability to acquire skills')">
+      2. Ability to acquire skills</button>
+    <button class="tablinks" onclick="openDash(event, 'Data is used to make better decisions')">
+      3. Data is used to make better decisions</button>
+    <button class="tablinks" onclick="openDash(event, 'Transparent view of services')">
+      4. Transparent view of services</button>
+    <button class="tablinks" onclick="openDash(event, 'Existing skills')">
+      5. Existing skills</button>
+    <button class="tablinks" onclick="openDash(event, 'Personalised services')">
+      6. Personalised services</button>
+    <button class="tablinks" onclick="openDash(event, 'Transparency')">
+      7. Transparency</button>
+    <button class="tablinks" onclick="openDash(event, 'Used by business')">
+      8. Used by business</button>
+  </div>
 </div>
 
-<div class="tab second">
-  <button class="tablinks" onclick="openDash(event, 'Connectivity')">
-    1. Connectivity</button>
-  <button class="tablinks" onclick="openDash(event, 'Acquire_Skills')">
-    2. Ability to Acquire Skills</button>
-  <button class="tablinks" onclick="openDash(event, 'Better_Decisions')">
-    3. Data is Used to Made Better Decisions</button>
-  <button class="tablinks" onclick="openDash(event, 'Transparent_View')">
-    4. Transparent View of Services</button>
-  <button class="tablinks" onclick="openDash(event, 'Existing Skills')">
-    5. Existing Skills</button>
-  <button class="tablinks" onclick="openDash(event, 'Personalised')">
-    6. Personalised Services</button>
-  <button class="tablinks" onclick="openDash(event, 'Transparency')">
-    7. Transparency</button>
-  <button class="tablinks" onclick="openDash(event, 'Used_by_Business')">
-    8. Used by Business</button>
+<div id="Main Page" class="tabcontent">
+  <p>Currently viewing: <strong><u>Main Page</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTQ4ZWFhMWEtNTI5Yy00YjAxL
+    ThlOTAtZGY0ODQyY2ZhNDRiIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+    FiMSJ9" width=100% height="830"></iframe>
 </div>
 
-<div id="Map" class="tabcontent">
-  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZjNhODM3NGItMTE4Zi00NjIzL
-  WE3ZGYtN2FhZGMxZDBlNWQwIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
-  FiMSJ9" width=100% height="860"></iframe>
-</div>
-
-<div id="Compare" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiO
-  WVhZTBhZDgtYzE2Zi00ZWZkLTgzZWUtMDA1ZmMxMTkzYmU0IiwidCI6IjkyMzEzNWM0LWY1MjQtND
-  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+<div id="Compare Two Councils" class="tabcontent">
+  <p>Currently viewing: <strong><u>Compare Two Councils</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTM5NTFhYzItYjYzOC00NWNkL
+    WIyZGUtN2M1NjY5MDNhNWZhIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+    FiMSJ9" width=100% height="830"></iframe>
 </div>
 
 <div id="Connectivity" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiZ
-  DYxN2Q5NTUtZjhhNy00MGQ5LTg5YjEtOGE0YWMxODU4MzE0IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  <p>Currently viewing: <strong><u>1. Connectivity</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiO
+    WM3YWI1ZmMtODNiZi00NmNlLTg1MmMtMzM5NDg2YWNlM2I3IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+    BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+</div>
+
+<div id="Ability to acquire skills" class="tabcontent">
+  <p>Currently viewing: <strong><u>2. Ability to acquire skills</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiZ
+  GMzYjUxY2YtMjZlNi00OTAyLWEyNzItYTE0Y2NmYjk5Zjg2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
-<div id="Acquire_Skills" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiO
-  DUwNDBlOTQtZmQ5NC00MjI3LWE2ZjYtZWRhZDMyYWU0MWVhIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+<div id="Data is used to make better decisions" class="tabcontent">
+  <p>Currently viewing: <strong><u>3. Data is used to make better decisions</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
-<div id="Better_Decisions" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiN
-  GQ1MzZlMTktY2Q5Yi00MjhlLWJiNDYtY2VjOGNkYTc4MTkxIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+<div id="Transparent view of services" class="tabcontent">
+  <p>Currently viewing: <strong><u>4. Transparent view of services</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
-<div id="Transparent_View" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiO
-  TZiN2RmMmEtNWQ1OS00Zjk2LTkyOTQtMGYyM2M0ZmYwNTNlIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+<div id="Existing skills" class="tabcontent">
+  <p>Currently viewing: <strong><u>5. Existing skills</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
-<div id="Existing Skills" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiY
-  zQzMWRkMDAtOGE1MC00Nzk4LWE2MmMtNmFlODdiNDI3ZmRmIiwidCI6IjkyMzEzNWM0LWY1MjQtND
-  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
-</div>
-
-<div id="Personalised" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiY
-  jQ2ZGQzYzItODMyZS00NGZkLWI5ODItMGI4MGRjMmQ5OTc0IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+<div id="Personalised services" class="tabcontent">
+  <p>Currently viewing: <strong><u>6. Personalised services</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <div id="Transparency" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiY
-  TY5ZDhiYjQtYjI5My00OTZmLWE2Y2UtOGM3NDkxMDdmMTUwIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  <p>Currently viewing: <strong><u>7. Transparency</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
-<div id="Used_by_Business" class="tabcontent">
-  <iframe width=100% height="860" src="https://app.powerbi.com/view?r=eyJrIjoiY
-  mM5NDIwMDItZjhjMy00NmI0LWFjMzItMDhiMTYxYmIwZjQyIiwidCI6IjkyMzEzNWM0LWY1MjQtND
-  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<div id="Used by business" class="tabcontent">
+  <p>Currently viewing: <strong><u>8. Used by business</u></strong></p>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  WVhMmJiYjUtZGY3OC00ODE2LThiYTYtMWNiYzZjYzI4NWY2IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <script>
@@ -108,8 +178,9 @@ function openDash(evt, dashName) {
     document.getElementById(dashName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-
 </body>
 </html>
