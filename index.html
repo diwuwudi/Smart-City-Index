@@ -5,7 +5,7 @@
 body {
   font-family: "Lato", sans-serif;
   color: white;
-  background-image: url("./Resources/plain-background.jpg");
+  background-image: url("https://gwi.com.au/wp-content/uploads/2017/07/home-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,10 +78,14 @@ p {
 <div class="dropdown">
   <button class="dropbtn">Menu</button>
   <div class="dropdown-content">
-    <button class="tablinks" onclick="openDash(event, 'Main Page')"
-  id="defaultOpen">Main Page</button>
-    <button class="tablinks" onclick="openDash(event, 'Compare Two Councils')">
-      Compare Two Councils</button>
+    <button class="tablinks" onclick="openDash(event, 'Global map')"
+  id="defaultOpen">Global map</button>
+    <button class="tablinks" onclick="openDash(event, 'Australia in detail')">
+    Australia in detail</button>
+    <button class="tablinks" onclick="openDash(event, 'Find your city')">
+    Find your city</button>
+    <button class="tablinks" onclick="openDash(event, 'Compare Two Cities')">
+      Compare two cities</button>
     <button class="tablinks" onclick="openDash(event, 'Connectivity')">
       1. Connectivity</button>
     <button class="tablinks" onclick="openDash(event, 'Ability to acquire skills')">
@@ -102,83 +106,99 @@ p {
 </div>
 
 <!--The following section is related to the map-->
-<div id="Main Page" class="tabcontent">
-  <p>Currently viewing: <strong><u>Main Page</u></strong></p>
-  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMzJhOWVmMWUtZjA3NC00MGJjL
-  Tk4YWQtMGUwZDA1MTQ2ZGNhIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+<div id="Global map" class="tabcontent">
+  <p>Currently viewing: <strong><u>Global map</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMzAyYTRiODQtOWUyNi00YWYyL
+  WFjNmMtOWJiZTUxMTJmZmU0IiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
   FiMSJ9" width=100% height="830"></iframe>
 </div>
 
-<!--The following section is related to Compare Two Councils-->
-<div id="Compare Two Councils" class="tabcontent">
-  <p>Currently viewing: <strong><u>Compare Two Councils</u></strong></p>
-  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiN2E0NDJmNzYtMDIwOS00Yzc4L
-  WI2ZTItOTY2NDNlMmZmYTJmIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+<!--The following section is related to Australia in detail-->
+<div id="Australia in detail" class="tabcontent">
+  <p>Currently viewing: <strong><u>Australia in detail</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzhlMDQ1NGMtOGJmZC00ZDVhL
+  TkzYmYtYmJhNzEzNDNkOGRlIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=100% height="830"></iframe>
+</div>
+
+<!--The following section is related to Find your own city-->
+<div id="Find your city" class="tabcontent">
+  <p>Currently viewing: <strong><u>Find your city</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNjU5ZjhjNjMtMzlhOS00OWVmL
+  WJiMjAtN2I5OTYxZGQyODFhIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=100% height="830"></iframe>
+</div>
+
+<!--The following section is related to Compare Two Cities-->
+<div id="Compare two cities" class="tabcontent">
+  <p>Currently viewing: <strong><u>Compare two cities</u></strong></p>
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDVjMjNiNDgtM2ZlOC00YTA1L
+  WI4YWUtYzhiZTQ2YmQ4N2JlIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
   FiMSJ9" width=100% height="830"></iframe>
 </div>
 
 <!--The following section is related to 1. Connectivity-->
 <div id="Connectivity" class="tabcontent">
   <p>Currently viewing: <strong><u>1. Connectivity</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiY
-  2EyZWZmNDMtOTBjYS00NzU0LTg2OGEtYjQzNzJjMWVmMmJjIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiO
+  TllZDc1YzUtZTQ0NS00NzM5LTgyNGMtNDIyYmQ5NGNhYzIwIiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 2. Acquire Skills-->
 <div id="Ability to acquire skills" class="tabcontent">
   <p>Currently viewing: <strong><u>2. Ability to acquire skills</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  MTY1NmVhNWItOTZkNi00MmFlLTg3MWQtZmVmMDRmNzdhMmY4IiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiM
+  DBiYmUyZGQtN2Y1MS00N2NkLTk5YWEtMjkzZTE2YWQ5N2ZiIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 3. Better Decisions-->
 <div id="Data is used to make better decisions" class="tabcontent">
   <p>Currently viewing: <strong><u>3. Data is used to make better decisions</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  N2Q5YTc2NzktNzBlMy00MzZhLTk0ZWYtZTBmZTU0YTViMGIwIiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiM
+  zdhZDA3ZjItNmUzYS00YTUzLTlmZDgtOWUzMjZjNzkxZTM1IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 4. Transparency-->
 <div id="Transparent view of services" class="tabcontent">
   <p>Currently viewing: <strong><u>4. Transparent view of services</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiZ
-  DJiMWUzNGMtMGY4My00MDNjLWFlZGMtMWYxYTEzMjQ4YmM3IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  DExMjI0MGMtMmNlOC00ZjNkLThhNzQtNmFhYTRjODI4ZTk5IiwidCI6IjkyMzEzNWM0LWY1MjQtND
   BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 5. Existing Skills-->
 <div id="Existing skills" class="tabcontent">
   <p>Currently viewing: <strong><u>5. Existing skills</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  ZTkzYWFhMDItOWVjNi00NzNlLWI1ZDctNjVlOWE1NDQ5ZGNjIiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiZ
+  GMwMzIxMzYtODhhYy00MTE5LTkyODItNDM5MGY3ZmY0MmEyIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 6. Personalised Services-->
 <div id="Personalised services" class="tabcontent">
   <p>Currently viewing: <strong><u>6. Personalised services</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  NjBkODNiYmYtNTNiNS00ZjMwLTg3NGUtYmE4NTAzN2EzYjBhIiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiY
+  mY2NmQ1MTEtNjBjYS00MTc5LThiNWUtMWUzNTdkZDFiNDUzIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 7. Transparency-->
 <div id="Transparency" class="tabcontent">
   <p>Currently viewing: <strong><u>7. Transparency</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  NmM4OGQ0MjgtYmUxOS00ZjZmLWFiMGYtN2MxZDE1NTVjNjQwIiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  TNmMmI0ZTMtYjI0Mi00NmEyLTlhZTUtMGIzNDRlZDkyMjVkIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following section is related to 8. Used by Business-->
 <div id="Used by business" class="tabcontent">
   <p>Currently viewing: <strong><u>8. Used by business</u></strong></p>
-  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoi
-  ZDRjNWI5ZmQtMmQ4YS00NzY2LWEzM2QtMWIxOTE4NjliMGQ3IiwidCI6IjkyMzEzNWM0LWY1MjQt
-  NDBhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <iframe width=100% height="830" src="https://app.powerbi.com/view?r=eyJrIjoiZ
+  DQyZTc1N2QtNmE2My00NjU5LTlhNDItOTFiYjI1MjQ4ZDMyIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
 </div>
 
 <!--The following JavaScript relates to button control-->
