@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box}
+body {
+
+  font-family: "Lato", sans-serif;
+}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: none;
+    background-color: #f1f1f1;
+    width: 12%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 88%;
+    border-left: none;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openDash(event, 'Find your city')" id="defaultOpen">
+  Find your city</button>
+  <button class="tablinks" onclick="openDash(event, 'Australia in detail')">
+  Australia in detail</button>
+  <button class="tablinks" onclick="openDash(event, 'Compare two cities')">
+    Compare two cities</button>
+  <button class="tablinks" onclick="openDash(event, 'Connectivity')">
+    1. Connectivity</button>
+  <button class="tablinks" onclick="openDash(event, 'Ability to acquire skills')">
+    2. Ability to acquire skills</button>
+  <button class="tablinks" onclick="openDash(event, 'Data is used to make better decisions')">
+    3. Data is used to make better decisions</button>
+  <button class="tablinks" onclick="openDash(event, 'Transparent view of services')">
+    4. Transparent view of services</button>
+  <button class="tablinks" onclick="openDash(event, 'Existing skills')">
+    5. Existing skills</button>
+  <button class="tablinks" onclick="openDash(event, 'Personalised services')">
+    6. Personalised services</button>
+  <button class="tablinks" onclick="openDash(event, 'Transparency')">
+    7. Transparency</button>
+  <button class="tablinks" onclick="openDash(event, 'Used by business')">
+    8. Used by business</button>
+</div>
+
+<!--The following section is related to Australia in detail-->
+<div id="Australia in detail" class="tabcontent">
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODU0MjBiNDAtZWNiZS00ZWU2L
+  WJhMjUtZTE0NjE4MDRlY2RmIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=100% height="790"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to Find your own city-->
+<div id="Find your city" class="tabcontent">
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYWVlZjBkNmYtZjE0Ny00NDI2L
+  TkxMTQtMzUwZjMzOTA1OTU5IiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=100% height="750"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to Compare Two Cities-->
+<div id="Compare two cities" class="tabcontent">
+  <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNjE5ZWQ0MTYtYjdhZi00ZmRiL
+  WE5Y2UtYzZmZGVhM2Y5ZDY1IiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+  FiMSJ9" width=100% height="790"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 1. Connectivity-->
+<div id="Connectivity" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  GY0YmVmOGUtMDc4OC00ZDUyLTg1YTItMjUwNTQwZTdjYjg4IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 2. Acquire Skills-->
+<div id="Ability to acquire skills" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiN
+  jQ4ZjMzOTYtZWM4Yy00ZjBmLWIzMDEtZDFjODUzNGU5MzBmIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 3. Better Decisions-->
+<div id="Data is used to make better decisions" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiM
+  2MyMjEyM2UtNzE2Mi00MDcyLWFlMmMtNGYyNmIzMzFmYWE1IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 4. Transparent view-->
+<div id="Transparent view of services" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiZ
+  TRkZDk4OGUtN2Y1NS00NjQwLWI0YWUtN2M2YjcwOWI2Yzk1IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 5. Existing Skills-->
+<div id="Existing skills" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiM
+  TFiMWU2NzYtYzM4Zi00M2Y5LTg4MjItNzJkM2FmYjdmNTExIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 6. Personalised Services-->
+<div id="Personalised services" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiY
+  2QyMDFjYWQtOWMwOC00MmUyLTg2N2UtZjkyNTU3YjRlNjE3IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 7. Transparency-->
+<div id="Transparency" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiO
+  ThkMDVlOTItNzIxOS00MmVmLTkyYjUtN2FmZjZlZjNlYzdkIiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<!--The following section is related to 8. Used by Business-->
+<div id="Used by business" class="tabcontent">
+  <iframe width=100% height="790" src="https://app.powerbi.com/view?r=eyJrIjoiY
+  2ZkZTlkODktNzYyZi00NzIxLWE5ZGItZThkMGE2ZDIwYTI1IiwidCI6IjkyMzEzNWM0LWY1MjQtND
+  BhYy04MWIzLTAyZjhlZWJkMmFiMSJ9"></iframe>
+  <div style="width: 100%; height: 35px; background-color: #eaeaea;
+  padding-top: -45; margin-top: -40px; position: relative;"></div>
+</div>
+
+<script>
+function openDash(evt, dashName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(dashName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
